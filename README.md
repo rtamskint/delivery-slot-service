@@ -26,7 +26,7 @@ Le système est construit autour d’une architecture hexagonale (Ports & Adapte
 ## Installation
 1. Cloner le repository sur gitlab:
 ```   
-git clone https://gitlab.com/kata-carrefour-elhadji-modou-seck/backend.git
+git clone https://github.com/rtamskint/delivery-slot-service.git
 ```   
 2. Vérifier que Docker est bien installé.
 3. lLancer les services avec Docker Compose.
