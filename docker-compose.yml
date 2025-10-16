@@ -1,0 +1,19 @@
+version: "3.7"
+services:
+  mysqldb:
+    image: "mysql:8.0"
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    ports:
+      - 3306:3306
+    networks:
+      - kata-net
+    environment:
+      MYSQL_DATABASE: delivery_db
+      MYSQL_USER: kata_user
+      MYSQL_PASSWORD: kata_password
+      MYSQL_ROOT_PASSWORD: kata_password
+    volumes:
+      - ./init_db.sql:/docker-entrypoint-initdb.d/init_db.sql
+networks:
+  kata-net:

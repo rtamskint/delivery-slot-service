@@ -1,0 +1,8 @@
+springdoc:
+  api-docs:
+    path: /api/api-docs  #changement du chemin par defaut de openapi(v3/api-docs)
+
+  swagger-ui:
+    path: /api-docs #changement du chemin par defaut de openapi(/swagger-ui.html)
+    operationsSorter: method # trie les operations par methodes http
+    display-request-duration: true # affiche la durée des requetes
